@@ -1,0 +1,6 @@
+{
+  "name": "HILALPOS - Sistem Kasir Universal Online & Offline",
+  "description": "Aplikasi POS (Point of Sale) universal premium untuk toko ritel, sembako, kafe, dan grosir dengan sinkronisasi offline-online, multi-satuan, struk thermal, dan manajemen inventaris.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,557 @@
+{
+  "stores": [
+    {
+      "id": "store-hilal-01",
+      "name": "HILALPOS Toko Berkah Utama",
+      "tagline": "SATU SISTEM, SEMUA USAHA",
+      "address": "Jl. Pemuda No. 88, Pusat Perbelanjaan, Indonesia",
+      "phone": "081234567890",
+      "currency": "IDR",
+      "timezone": "Asia/Jakarta",
+      "tax_rate": 0,
+      "receipt_paper": "58mm",
+      "receipt_header": "Selamat Datang di HILALPOS Toko Berkah",
+      "receipt_footer": "Terima kasih atas kunjungan Anda!\nBarang yang sudah dibeli tidak dapat ditukar kecuali perjanjian.",
+      "whatsapp_sender": "6281234567890",
+      "whatsapp_template": "Halo {customer}, terima kasih telah berbelanja di {store}. Berikut struk transaksi #{invoice} senilai Rp{total}. Tanggal: {date}. Semoga berkah selalu!",
+      "negative_stock_allowed": false,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "store_id": "store-hilal-01",
+      "username": "admin",
+      "password_hash": "admin123",
+      "name": "Ahmad Super Admin",
+      "role": "superadmin",
+      "is_active": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "usr-kasir-01",
+      "store_id": "store-hilal-01",
+      "username": "kasir",
+      "password_hash": "kasir123",
+      "name": "Siti Kasir Berkah",
+      "role": "kasir",
+      "is_active": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "usr-spv-01",
+      "store_id": "store-hilal-01",
+      "username": "supervisor",
+      "password_hash": "spv123",
+      "name": "Budi Supervisor",
+      "role": "supervisor",
+      "is_active": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-sembako",
+      "store_id": "store-hilal-01",
+      "name": "Sembako & Pangan",
+      "icon": "ShoppingBag",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cat-minuman",
+      "store_id": "store-hilal-01",
+      "name": "Minuman & Kopi",
+      "icon": "Coffee",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cat-snack",
+      "store_id": "store-hilal-01",
+      "name": "Snack & Makanan Ringan",
+      "icon": "Cookie",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cat-personal",
+      "store_id": "store-hilal-01",
+      "name": "Kebutuhan Pribadi & Sabun",
+      "icon": "Sparkles",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cat-elektronik",
+      "store_id": "store-hilal-01",
+      "name": "Aksesoris & Elektronik",
+      "icon": "Cpu",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cat-fashion",
+      "store_id": "store-hilal-01",
+      "name": "Pakaian & Perlengkapan",
+      "icon": "Shirt",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "u-pcs",
+      "store_id": "store-hilal-01",
+      "name": "Pcs / Buah",
+      "symbol": "pcs",
+      "is_base": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "u-renteng",
+      "store_id": "store-hilal-01",
+      "name": "Renteng",
+      "symbol": "rtg",
+      "is_base": false,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "u-pak",
+      "store_id": "store-hilal-01",
+      "name": "Pak / Pack",
+      "symbol": "pak",
+      "is_base": false,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "u-karton",
+      "store_id": "store-hilal-01",
+      "name": "Karton / Dus",
+      "symbol": "dus",
+      "is_base": false,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "u-kg",
+      "store_id": "store-hilal-01",
+      "name": "Kilogram",
+      "symbol": "kg",
+      "is_base": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "u-porsi",
+      "store_id": "store-hilal-01",
+      "name": "Porsi / Cup",
+      "symbol": "porsi",
+      "is_base": true,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-001",
+      "store_id": "store-hilal-01",
+      "sku": "SBK-KOP-001",
+      "barcode": "899100100101",
+      "name": "Kopi Kapal Api Special Mix",
+      "category_id": "cat-minuman",
+      "brand_variant": "Kapal Api Sachet 24gr",
+      "description": "Kopi bubuk instan gula paduan mantap.",
+      "cost_price": 1300,
+      "sell_price": 2000,
+      "base_unit": "pcs",
+      "current_stock": 440,
+      "min_stock": 50,
+      "supplier_id": "sup-001",
+      "is_active": true,
+      "unit_conversions": [
+        {
+          "unit": "renteng",
+          "factor": 10,
+          "price": 18000,
+          "name": "Renteng (10 sachet)"
+        },
+        {
+          "unit": "karton",
+          "factor": 120,
+          "price": 205000,
+          "name": "Karton (12 renteng / 120 pcs)"
+        }
+      ],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:17.704Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-002",
+      "store_id": "store-hilal-01",
+      "sku": "SBK-MIE-001",
+      "barcode": "899886620022",
+      "name": "Indomie Goreng Spesial",
+      "category_id": "cat-sembako",
+      "brand_variant": "Indofood 85gr",
+      "description": "Mie instan goreng rasa spesial legendaris.",
+      "cost_price": 2800,
+      "sell_price": 3500,
+      "base_unit": "pcs",
+      "current_stock": 320,
+      "min_stock": 40,
+      "supplier_id": "sup-001",
+      "is_active": true,
+      "unit_conversions": [
+        {
+          "unit": "dus",
+          "factor": 40,
+          "price": 130000,
+          "name": "Karton / Dus (40 pcs)"
+        }
+      ],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-003",
+      "store_id": "store-hilal-01",
+      "sku": "SBK-MYK-001",
+      "barcode": "899300500303",
+      "name": "Minyak Goreng Sania Pouch 2L",
+      "category_id": "cat-sembako",
+      "brand_variant": "Sania 2 Liter",
+      "description": "Minyak goreng kelapa sawit higienis bermutu.",
+      "cost_price": 32000,
+      "sell_price": 36500,
+      "base_unit": "pcs",
+      "current_stock": 85,
+      "min_stock": 15,
+      "supplier_id": "sup-001",
+      "is_active": true,
+      "unit_conversions": [
+        {
+          "unit": "dus",
+          "factor": 6,
+          "price": 215000,
+          "name": "Karton / Dus (6 pouch)"
+        }
+      ],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-004",
+      "store_id": "store-hilal-01",
+      "sku": "SNK-CHIP-001",
+      "barcode": "899200400404",
+      "name": "Chitato Sapi Panggang 68g",
+      "category_id": "cat-snack",
+      "brand_variant": "Indofood Fritolay",
+      "description": "Keripik kentang bergelombang rasa sapi panggang.",
+      "cost_price": 8500,
+      "sell_price": 11500,
+      "base_unit": "pcs",
+      "current_stock": 60,
+      "min_stock": 12,
+      "supplier_id": "sup-002",
+      "is_active": true,
+      "unit_conversions": [
+        {
+          "unit": "dus",
+          "factor": 30,
+          "price": 330000,
+          "name": "Dus (30 pcs)"
+        }
+      ],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-005",
+      "store_id": "store-hilal-01",
+      "sku": "KFE-LTT-001",
+      "barcode": "899554400505",
+      "name": "Kopi Susu Gula Aren HILAL",
+      "category_id": "cat-minuman",
+      "brand_variant": "Fresh Brew 16oz",
+      "description": "Espresso arabika blend dengan susu segar & gula aren murni.",
+      "cost_price": 7000,
+      "sell_price": 18000,
+      "base_unit": "porsi",
+      "current_stock": 150,
+      "min_stock": 20,
+      "supplier_id": "sup-002",
+      "is_active": true,
+      "unit_conversions": [],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-006",
+      "store_id": "store-hilal-01",
+      "sku": "ELK-KBL-001",
+      "barcode": "899665500606",
+      "name": "Kabel Fast Charging Type-C 65W",
+      "category_id": "cat-elektronik",
+      "brand_variant": "Braided Nylon 1.2M",
+      "description": "Kabel data dan charging tahan tekukan daya tinggi.",
+      "cost_price": 18000,
+      "sell_price": 35000,
+      "base_unit": "pcs",
+      "current_stock": 28,
+      "min_stock": 5,
+      "supplier_id": "sup-002",
+      "is_active": true,
+      "unit_conversions": [],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    },
+    {
+      "id": "prod-007",
+      "store_id": "store-hilal-01",
+      "sku": "SBK-BRS-001",
+      "barcode": "899778800707",
+      "name": "Beras Premium Ramos Wangi 5kg",
+      "category_id": "cat-sembako",
+      "brand_variant": "Karung 5kg",
+      "description": "Beras pulen bersih kualitas super.",
+      "cost_price": 68000,
+      "sell_price": 75000,
+      "base_unit": "pcs",
+      "current_stock": 45,
+      "min_stock": 10,
+      "supplier_id": "sup-001",
+      "is_active": true,
+      "unit_conversions": [
+        {
+          "unit": "karton",
+          "factor": 5,
+          "price": 365000,
+          "name": "Bal (5 karung / 25kg)"
+        }
+      ],
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z",
+      "updated_by": "admin"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "trx-1793286377704-3o2g",
+      "store_id": "store-hilal-01",
+      "invoice_number": "TRX-20261029-002",
+      "cashier_id": "usr-kasir-01",
+      "cashier_name": "Kasir",
+      "customer_id": null,
+      "customer_name": "Umum (Pelanggan Walk-In)",
+      "subtotal": 18000,
+      "discount": 0,
+      "tax": 0,
+      "total": 18000,
+      "payment_method": "Tunai",
+      "payment_status": "Lunas",
+      "total_paid": 20000,
+      "change_amount": 2000,
+      "remaining_debt": 0,
+      "due_date": null,
+      "notes": "",
+      "offline_created": false,
+      "idempotency_key": "test-key-123",
+      "synced_at": "2026-10-29T15:06:17.704Z",
+      "created_at": "2026-10-29T15:06:17.704Z",
+      "updated_at": "2026-10-29T15:06:17.704Z"
+    },
+    {
+      "id": "trx-sample-01",
+      "store_id": "store-hilal-01",
+      "invoice_number": "TRX-20261029-001",
+      "cashier_id": "usr-kasir-01",
+      "cashier_name": "Siti Kasir Berkah",
+      "customer_id": "cust-001",
+      "customer_name": "Pak H. Sulaiman (Langganan)",
+      "subtotal": 54500,
+      "discount": 2500,
+      "tax": 0,
+      "total": 52000,
+      "payment_method": "Tunai",
+      "payment_status": "Lunas",
+      "total_paid": 60000,
+      "change_amount": 8000,
+      "remaining_debt": 0,
+      "due_date": null,
+      "notes": "Pelanggan setia toko",
+      "offline_created": false,
+      "idempotency_key": "idem-sample-01",
+      "synced_at": "2026-10-29T15:06:08.293Z",
+      "created_at": "2026-10-29T12:06:08.294Z",
+      "updated_at": "2026-10-29T12:06:08.294Z"
+    }
+  ],
+  "transaction_items": [
+    {
+      "id": "item-sample-01",
+      "transaction_id": "trx-sample-01",
+      "product_id": "prod-001",
+      "sku_snapshot": "SBK-KOP-001",
+      "name_snapshot": "Kopi Kapal Api Special Mix",
+      "unit": "renteng",
+      "factor": 10,
+      "qty": 1,
+      "base_qty": 10,
+      "cost_price_snapshot": 13000,
+      "sell_price_snapshot": 18000,
+      "discount": 0,
+      "subtotal": 18000
+    },
+    {
+      "id": "item-sample-02",
+      "transaction_id": "trx-sample-01",
+      "product_id": "prod-003",
+      "sku_snapshot": "SBK-MYK-001",
+      "name_snapshot": "Minyak Goreng Sania Pouch 2L",
+      "unit": "pcs",
+      "factor": 1,
+      "qty": 1,
+      "base_qty": 1,
+      "cost_price_snapshot": 32000,
+      "sell_price_snapshot": 36500,
+      "discount": 2500,
+      "subtotal": 34000
+    },
+    {
+      "id": "item-1793286377704-ni7a",
+      "transaction_id": "trx-1793286377704-3o2g",
+      "product_id": "prod-001",
+      "sku_snapshot": "SBK-KOP-001",
+      "name_snapshot": "Kopi Kapal Api Special Mix",
+      "unit": "renteng",
+      "factor": 10,
+      "qty": 1,
+      "base_qty": 10,
+      "cost_price_snapshot": 13000,
+      "sell_price_snapshot": 18000,
+      "discount": 0,
+      "subtotal": 18000
+    }
+  ],
+  "stock_mutations": [
+    {
+      "id": "mut-1793286377704-2410",
+      "store_id": "store-hilal-01",
+      "product_id": "prod-001",
+      "mutation_type": "sale",
+      "qty_delta": -10,
+      "remaining_stock": 440,
+      "reference_id": "TRX-20261029-002",
+      "notes": "Penjualan TRX-20261029-002 (1 renteng)",
+      "user_id": "usr-kasir-01",
+      "user_name": "Kasir",
+      "created_at": "2026-10-29T15:06:17.704Z"
+    },
+    {
+      "id": "mut-sample-01",
+      "store_id": "store-hilal-01",
+      "product_id": "prod-001",
+      "mutation_type": "sale",
+      "qty_delta": -10,
+      "remaining_stock": 450,
+      "reference_id": "trx-sample-01",
+      "notes": "Penjualan TRX-20261029-001 (1 renteng = 10 pcs)",
+      "user_id": "usr-kasir-01",
+      "user_name": "Siti Kasir Berkah",
+      "created_at": "2026-10-29T12:06:08.294Z"
+    },
+    {
+      "id": "mut-sample-02",
+      "store_id": "store-hilal-01",
+      "product_id": "prod-003",
+      "mutation_type": "sale",
+      "qty_delta": -1,
+      "remaining_stock": 85,
+      "reference_id": "trx-sample-01",
+      "notes": "Penjualan TRX-20261029-001 (1 pcs)",
+      "user_id": "usr-kasir-01",
+      "user_name": "Siti Kasir Berkah",
+      "created_at": "2026-10-29T12:06:08.294Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-001",
+      "store_id": "store-hilal-01",
+      "name": "Pak H. Sulaiman (Langganan)",
+      "phone": "081298765432",
+      "email": "sulaiman@gmail.com",
+      "address": "Jl. Merak No. 12",
+      "total_debt": 0,
+      "debt_limit": 1000000,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "cust-002",
+      "store_id": "store-hilal-01",
+      "name": "Warung Bu Rini",
+      "phone": "085712348899",
+      "email": "",
+      "address": "Gang Kelapa 2",
+      "total_debt": 125000,
+      "debt_limit": 500000,
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup-001",
+      "store_id": "store-hilal-01",
+      "name": "Distributor Sembako Nusantara PT",
+      "phone": "02155667788",
+      "contact_person": "Pak Hendra",
+      "address": "Kawasan Industri Pulo Gadung, Jakarta",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    },
+    {
+      "id": "sup-002",
+      "store_id": "store-hilal-01",
+      "name": "CV Berkah Grosir Snack & Minuman",
+      "phone": "081399887766",
+      "contact_person": "Bu Maya",
+      "address": "Pasar Induk Kramat Jati",
+      "created_at": "2026-10-29T15:06:08.293Z",
+      "updated_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "sync_logs": [
+    {
+      "id": "sync-001",
+      "store_id": "store-hilal-01",
+      "device_id": "POS-TERMINAL-01",
+      "transactions_synced": 1,
+      "conflicts_resolved": 0,
+      "status": "SUCCESS",
+      "created_at": "2026-10-29T15:06:08.293Z"
+    }
+  ],
+  "system_config": {
+    "initialized": true,
+    "version": "1.0.0",
+    "last_sync": "2026-10-29T15:06:08.293Z"
+  }
+}
